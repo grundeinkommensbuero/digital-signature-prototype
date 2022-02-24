@@ -16,11 +16,13 @@ export default function ExpeditionPage() {
       </Head>
 
       <header className={styles.header}>
-        <div>Logo</div>
-        <nav className={styles.navigation}>
-          <a>Startseite</a>
-          <a>Über das Projekt</a>
-        </nav>
+        <div className={styles.headerContent}>
+          <div className={styles.logo}>Logo</div>
+          <nav className={styles.navigation}>
+            <a href="">Startseite</a>
+            <a href="">Über das Projekt</a>
+          </nav>
+        </div>
       </header>
 
       <main className={styles.main}>
@@ -59,7 +61,11 @@ export default function ExpeditionPage() {
       </main>
 
       <footer className={styles.footer}>
-        <a href="http://127.0.0.1:24727/eID-Client">
+        <a
+          href="http://127.0.0.1:24727/eID-Client"
+          target="_blank"
+          rel="noreferrer"
+        >
           Hier gehts zur Ausweis App
         </a>
       </footer>
