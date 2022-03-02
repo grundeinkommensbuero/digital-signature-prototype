@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { useEffect } from "react";
 import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
 import Link from "next/link";
 import { LinkButton } from "../components/Button";
 import expeditionImage from "../images/expedition.jpg";
@@ -39,7 +40,7 @@ export default function Home() {
           </InitiativePreview>
 
           <InitiativePreview
-            link="/initiativen/kns"
+            link=""
             title="Klimaneutalität 2030"
             image={klimaImage}
           >
@@ -49,7 +50,7 @@ export default function Home() {
           </InitiativePreview>
 
           <InitiativePreview
-            link="/initiativen/autofrei"
+            link=""
             title="Berlin Autofrei"
             image={autofreiImage}
           >
@@ -59,7 +60,7 @@ export default function Home() {
           </InitiativePreview>
 
           <InitiativePreview
-            link="/initiativen/dwe"
+            link=""
             title="Deutsche Wohnen und co enteignen"
             image={dweImage}
           >
@@ -74,15 +75,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="http://127.0.0.1:24727/eID-Client"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Hier gehts zur Ausweis App
-        </a>
-      </footer>
+      <Footer />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
 import styles from "../styles/About.module.css";
 
 export default function aboutPage() {
@@ -32,6 +33,8 @@ export default function aboutPage() {
           einer Förderung durch Citylab Berlin gebaut.
         </p>
       </main>
+
+      <Footer />
     </div>
   );
 }
