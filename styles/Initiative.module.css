@@ -36,12 +36,6 @@
   margin-bottom: 2rem;
 }
 
-@media (max-width: 800px) {
-  .main {
-    padding: 2rem 1rem;
-  }
-}
-
 .steps {
   display: flex;
   justify-content: space-between;
@@ -80,4 +74,30 @@
 
 .furtherLinks a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .main {
+    padding: 2rem 1rem;
+  }
+
+  .steps {
+    flex-direction: column;
+  }
+
+  .step {
+    width: 100%;
+  }
+
+  .stepIcon {
+    align-self: flex-start;
+  }
+
+  .sectionWide {
+    padding: 0;
+  }
+
+  .contactContainer {
+    padding: 2rem 1rem;
+  }
 }
