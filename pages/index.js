@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { useEffect } from "react";
 import { Header } from "../components/Header";
+import Link from "next/link";
 import { LinkButton } from "../components/Button";
 import expeditionImage from "../images/expedition.jpg";
 import autofreiImage from "../images/autofrei.jpg";
@@ -28,6 +29,7 @@ export default function Home() {
 
         <section className={styles.initiatives}>
           <InitiativePreview
+            link="/initiativen/expedition"
             title="Expedition Grundeinkommen"
             image={expeditionImage}
           >
@@ -36,19 +38,28 @@ export default function Home() {
             zu 10.000 Menschen und unabhängig wissenschaftlich beforscht.
           </InitiativePreview>
 
-          <InitiativePreview title="Klimaneutalität 2030" image={klimaImage}>
+          <InitiativePreview
+            link="/initiativen/kns"
+            title="Klimaneutalität 2030"
+            image={klimaImage}
+          >
             Klimaneustart Berlin will mit einem Volksbegehren und -entscheid
             bewirken, dass wir unserer Verantwortung endlich gerecht werden, d.h
             Klimaneutralität bis 2030!
           </InitiativePreview>
 
-          <InitiativePreview title="Berlin Autofrei" image={autofreiImage}>
+          <InitiativePreview
+            link="/initiativen/autofrei"
+            title="Berlin Autofrei"
+            image={autofreiImage}
+          >
             Wir wollen deutlich weniger Autoverkehr innerhalb des Berliner
             S-Bahn-Rings. Der „Volksentscheid Berlin autofrei“ sorgt für eine
             gesunde, sichere und klima­schonende Stadt mit mehr Platz für alle!
           </InitiativePreview>
 
           <InitiativePreview
+            link="/initiativen/dwe"
             title="Deutsche Wohnen und co enteignen"
             image={dweImage}
           >
@@ -76,27 +87,31 @@ export default function Home() {
   );
 }
 
-function InitiativePreview({ title, image, children }) {
+function InitiativePreview({ link, title, image, children }) {
   return (
-    <div className={styles.initiativePreview}>
-      <div className={styles.previewImage}>
-        <Image
-          src={image}
-          alt="Foto der Initiative"
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
-
-      <div className={styles.previewContent}>
-        <div className={styles.previewInfo}>
-          <h3 className={styles.previewTitle}>{title}</h3>
-
-          <p>{children}</p>
+    <Link href={link}>
+      <div className={styles.initiativePreview}>
+        <div className={styles.previewImage}>
+          <Image
+            src={image}
+            alt="Foto der Initiative"
+            layout="fill"
+            objectFit="cover"
+          />
         </div>
 
-        <LinkButton href={"initiativen/expedition"}>Unterschreiben</LinkButton>
+        <div className={styles.previewContent}>
+          <div className={styles.previewInfo}>
+            <h3 className={styles.previewTitle}>{title}</h3>
+
+            <p>{children}</p>
+          </div>
+
+          <LinkButton href={"initiativen/expedition"}>
+            Unterschreiben
+          </LinkButton>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }

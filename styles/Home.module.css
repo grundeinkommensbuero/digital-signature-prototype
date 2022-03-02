@@ -29,6 +29,7 @@
   border: 1px solid var(--primary-color);
   margin-bottom: 3rem;
   display: block;
+  cursor: pointer;
 }
 
 .previewImage {
