@@ -1,0 +1,35 @@
+/* STYLES FOR FAQ */
+.question {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.question::after {
+  content: "";
+  flex: auto;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.questionHeadingContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.questionHeading {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  font-weight: bold;
+  max-width: 80%;
+  line-height: 1.4;
+}
+
+.question p {
+  width: 100%;
+}
