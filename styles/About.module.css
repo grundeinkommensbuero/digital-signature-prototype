@@ -1,0 +1,15 @@
+.main {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.section {
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 800px) {
+  .main {
+    padding: 2rem 1rem;
+  }
+}
