@@ -82,7 +82,7 @@ export default function Home() {
 
 function InitiativePreview({ link, title, image, children }) {
   return (
-    <Link href={link}>
+    <Link href={link} passHref>
       <div className={styles.initiativePreview}>
         <div className={styles.previewImage}>
           <Image
@@ -100,9 +100,7 @@ function InitiativePreview({ link, title, image, children }) {
             <p>{children}</p>
           </div>
 
-          <LinkButton href={"initiativen/expedition"}>
-            Unterschreiben
-          </LinkButton>
+          <LinkButton href={link}>Unterschreiben</LinkButton>
         </div>
       </div>
     </Link>

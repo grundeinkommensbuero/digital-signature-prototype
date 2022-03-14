@@ -66,7 +66,7 @@ export default function ExpeditionPage() {
             width={800}
             alt="Gruppenfoto der Expedition Grundeinkommen"
           />
-          <div>
+          <div className={styles.description}>
             <p>
               Immer mehr Menschen haben das Gefühl, dass ein bedingungsloses
               Grundeinkommen richtig gut für uns und unsere Gesellschaft ist.
@@ -80,6 +80,18 @@ export default function ExpeditionPage() {
               Die Zeit ist reif für einen groß angelegten, staatlichen
               Modellversuch zum Grundeinkommen. Bundesweit, repräsentativ mit
               bis zu 10.000 Menschen und unabhängig wissenschaftlich beforscht.
+            </p>
+          </div>
+          <div>
+            <p>
+              <b>
+                Hier geht es zum vollständigen Gesetzestext. Gehe sicher, dass
+                du ihn gänzlich verstanden hast, bevor du für die Initiative
+                unterschreibst.
+              </b>
+              <br />
+              <br />
+              <LinkButton href="#">Zum Gesetzestext</LinkButton>
             </p>
           </div>
         </section>

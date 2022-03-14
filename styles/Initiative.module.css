@@ -22,6 +22,14 @@
   max-width: 75rem;
 }
 
+.description::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
 .sectionContact {
   background: var(--neutral-color);
 }
