@@ -33,6 +33,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-##Licensing
+## Licensing
 
 This software repository ist under GNU General Public License (GPLv3) https://www.gnu.org/licenses/gpl-3.0.html.en
