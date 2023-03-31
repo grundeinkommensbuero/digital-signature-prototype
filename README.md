@@ -35,4 +35,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Licensing
 
-This software repository is under GNU General Public License (GPLv3) https://www.gnu.org/licenses/gpl-3.0.html.en
+This software repository is published under GNU General Public License (GPLv3) https://www.gnu.org/licenses/gpl-3.0.html.en
